@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { routing } from './app.routing';
 
 import { AlertService } from './_services/alert.service';
+import { AuthenticationService } from './_services/authentication.service';
 import { AlertComponent } from './alert/alert.component';
 
 @NgModule({
@@ -21,7 +22,8 @@ import { AlertComponent } from './alert/alert.component';
     routing
   ],
   providers: [
-    AlertService
+    AlertService,
+    AuthenticationService
   ],
   bootstrap: [AppComponent]
 })
