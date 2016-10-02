@@ -8,6 +8,7 @@ import { routing } from './app.routing';
 
 import { AlertService } from './_services/alert.service';
 import { AuthenticationService } from './_services/authentication.service';
+import { UserService } from './_services/user.service';
 import { AlertComponent } from './alert/alert.component';
 import { LoginComponent } from './login/login.component';
 
@@ -25,7 +26,8 @@ import { LoginComponent } from './login/login.component';
   ],
   providers: [
     AlertService,
-    AuthenticationService
+    AuthenticationService,
+    UserService
   ],
   bootstrap: [AppComponent]
 })
