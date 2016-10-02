@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { routing } from './app.routing';
+
 import { AlertService } from './_services/alert.service';
 import { AlertComponent } from './alert/alert.component';
 
@@ -15,7 +17,8 @@ import { AlertComponent } from './alert/alert.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   providers: [
     AlertService
